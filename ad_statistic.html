@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="big_wrapper _full">
+      <div class="header">
+        <div class="header_wrapper">
+          <div class="logo"><img src="img/logo.svg" alt="" /></div>
+          <div class="menu">
+            <div class="menu_item _active">Ваши видео</div>
+            <div class="menu_item">FAQ</div>
+            <div class="menu_item">Контакты</div>
+            <div class="menu_item">Цены</div>
+          </div>
+          <div class="secondary_button">
+            Выйти
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5"
+                stroke="#111828"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3333 14.1666L17.4999 9.99998L13.3333 5.83331"
+                stroke="#111828"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.5 10H7.5"
+                stroke="#111828"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <div class="big_block">
+          <div class="filter_container">
+            <div class="filter_header">
+              <div class="name">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z"
+                    stroke="#111828"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Фильтровать
+              </div>
+              <div class="close_filter">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 12H5"
+                    stroke="#7D8798"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 19L5 12L12 5"
+                    stroke="#7D8798"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="filter_block">
+              <div class="filter_drop_down">
+                <p>Период показа</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12.5L10 7.5L5 12.5"
+                    stroke="#7D8798"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="filter_body">
+                <div class="btn_cont">
+                  <div class="secondary_button">3ч</div>
+                  <div class="secondary_button">6ч</div>
+                  <div class="secondary_button">12ч</div>
+                  <div class="secondary_button">24ч</div>
+                  <div class="secondary_button">2 дня</div>
+                  <div class="primary_button">3 дня</div>
+                </div>
+                <div class="input_cont">
+                  <p>Вручную</p>
+                  <div class="dates">
+                    <div class="date_input">
+                      <input type="text" placeholder="dd/mm/y" />
+                      <img src="img/calendar.svg" alt="" />
+                    </div>
+                    -
+                    <div class="date_input">
+                      <input type="text" placeholder="dd/mm/y" />
+                      <img src="img/calendar.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_block _2">
+              <div class="filter_drop_down">
+                <p>Локация</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12.5L10 7.5L5 12.5"
+                    stroke="#7D8798"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="filter_body">
+                <div class="btn_cont">
+                  <div class="secondary_button">
+                    Локация 1
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 5L5 15"
+                        stroke="#111828"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M5 5L15 15"
+                        stroke="#111828"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="secondary_button">
+                    Локация 2
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 5L5 15"
+                        stroke="#111828"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M5 5L15 15"
+                        stroke="#111828"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="#" class="link"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 4.16669V15.8334"
+                      stroke="#3359E5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.16666 10H15.8333"
+                      stroke="#3359E5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Добавить локацию</a
+                >
+              </div>
+            </div>
+            <div class="filter_block _3">
+              <div class="filter_drop_down">
+                <p>Аудитория</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12.5L10 7.5L5 12.5"
+                    stroke="#7D8798"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="filter_body">
+                <div class="check_group">
+                  <div class="title">Пол</div>
+                  <div class="cheackbox">
+                    <input id="check_1" type="checkbox" />
+                    <label for="check_1">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Мужской</p>
+                    </label>
+                  </div>
+                  <div class="cheackbox">
+                    <input id="check_2" type="checkbox" />
+                    <label for="check_2">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Женский</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="check_group">
+                  <div class="title">Возраст</div>
+                  <div class="cheackbox">
+                    <input id="check_3" type="checkbox" />
+                    <label for="check_3">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Child</p>
+                    </label>
+                  </div>
+                  <div class="cheackbox">
+                    <input id="check_4" type="checkbox" />
+                    <label for="check_4">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Young</p>
+                    </label>
+                  </div>
+                  <div class="cheackbox">
+                    <input id="check_5" type="checkbox" />
+                    <label for="check_5">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Adult</p>
+                    </label>
+                  </div>
+                  <div class="cheackbox">
+                    <input id="check_6" type="checkbox" />
+                    <label for="check_6">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Old</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="reset">
+                  Сбросить
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5L5 15"
+                      stroke="#111828"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5 5L15 15"
+                      stroke="#111828"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="filter_block _4">
+              <div class="filter_drop_down">
+                <p>Агрегация</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12.5L10 7.5L5 12.5"
+                    stroke="#7D8798"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="filter_body">
+                <div class="check_group">
+                  <div class="cheackbox">
+                    <input id="check_1" type="checkbox" />
+                    <label for="check_1">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Возраст</p>
+                    </label>
+                  </div>
+                  <div class="cheackbox">
+                    <input id="check_2" type="checkbox" />
+                    <label for="check_2">
+                      <div class="icon">
+                        <img src="img/check.svg" alt="" />
+                      </div>
+                      <p>Пол</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_body">
+            <div class="filter_mobile_icon back_icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z"
+                  stroke="#111828"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="page_title">
+              <div class="back_icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8333 10H4.16666"
+                    stroke="#111828"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.99999 15.8333L4.16666 9.99999L9.99999 4.16666"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <span> Статистика показа рекламы</span>
+            </div>
+            <div class="video_header">
+              <div class="left_part">
+                <div class="img">
+                  <img src="img/video_2.png" alt="" />
+                </div>
+                <div class="text">
+                  <div class="title">
+                    Aquarelle Drawing.mp4
+                    <div class="edit_icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_236_6975)">
+                          <path
+                            d="M11.3333 2.00001C11.5084 1.82491 11.7163 1.68602 11.9451 1.59126C12.1739 1.4965 12.4191 1.44772 12.6667 1.44772C12.9143 1.44772 13.1595 1.4965 13.3883 1.59126C13.617 1.68602 13.8249 1.82491 14 2.00001C14.1751 2.1751 14.314 2.38297 14.4088 2.61175C14.5035 2.84052 14.5523 3.08572 14.5523 3.33334C14.5523 3.58096 14.5035 3.82616 14.4088 4.05494C14.314 4.28371 14.1751 4.49158 14 4.66667L5.00001 13.6667L1.33334 14.6667L2.33334 11L11.3333 2.00001Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_236_6975">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                  <p>Краткое Описание видео</p>
+                </div>
+              </div>
+              <div class="right_part">
+                Last update: 9.17.2022, <br />
+                4:32:07 PM
+              </div>
+            </div>
+            <div class="statistic_body">
+              <div class="tab_header">
+                <div class="tab_header_item _active">Table view</div>
+                <div class="tab_header_item">Chart view</div>
+                <div class="tab_header_item">Overall</div>
+              </div>
+              <div class="tab_boies">
+                <div class="tab_body _active">
+                  <div class="table">
+                    <div class="table_head">
+                      <div class="col">Gaze only</div>
+                      <div class="col">Child</div>
+                      <div class="col">Young</div>
+                      <div class="col">Adult</div>
+                      <div class="col">Old</div>
+                      <div class="col">Total</div>
+                    </div>
+                    <div class="table_body">
+                      <div class="row">
+                        <div class="col">Male</div>
+                        <div class="col">410</div>
+                        <div class="col">677</div>
+                        <div class="col">3136</div>
+                        <div class="col">181</div>
+                        <div class="col">4404</div>
+                      </div>
+                      <div class="row">
+                        <div class="col">Male</div>
+                        <div class="col">410</div>
+                        <div class="col">677</div>
+                        <div class="col">3136</div>
+                        <div class="col">181</div>
+                        <div class="col">4404</div>
+                      </div>
+                      <div class="row">
+                        <div class="col">Male</div>
+                        <div class="col">410</div>
+                        <div class="col">677</div>
+                        <div class="col">3136</div>
+                        <div class="col">181</div>
+                        <div class="col">4404</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_body">
+                  <canvas id="acquisitions"></canvas>
+                </div>
+                <div class="tab_body">
+                  <div class="chart_container">
+                    <div class="chart_item">
+                      <p>Chart.js Pie Chart</p>
+                      <canvas id="chart_1"></canvas>
+                    </div>
+                    <div class="chart_item">
+                      <p>Chart.js Pie Chart</p>
+                      <canvas id="chart_2"></canvas>
+                    </div>
+                    <div class="chart_item">
+                      <p>Chart.js Pie Chart</p>
+                      <canvas id="chart_3"></canvas>
+                    </div>
+                    <div class="chart_item">
+                      <p>Chart.js Pie Chart</p>
+                      <canvas id="chart_4"></canvas>
+                    </div>
+                    <div class="chart_item">
+                      <p>Chart.js Pie Chart</p>
+                      <canvas id="chart_5"></canvas>
+                    </div>
+                    <div class="chart_item">
+                      <p>Chart.js Pie Chart</p>
+                      <canvas id="chart_6"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>
