@@ -15,7 +15,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="big_wrapper">
+    <!-- <div class="big_wrapper">
       <a href="ad_settings.html">настройки</a>
       <a href="ad_statistic.html">статистика</a>
       <a href="login.html">логин</a>
@@ -180,78 +180,8 @@
           <input type="text" placeholder="dd/mm/y" />
           <img src="img/calendar.svg" alt="" />
         </div>
-        <div class="drop_down">
-          <div class="result">
-            <div class="item">
-              <span>Локация 1</span>
-              <div class="icon _drop_close">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15 5L5 15"
-                    stroke="#111828"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M5 5L15 15"
-                    stroke="#111828"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="drop_down_title">
-            <div class="text">Выберите локацию</div>
-            <div class="icon">
-              <img src="img/chevron-down.svg" alt="" />
-            </div>
-          </div>
-          <div class="drop_down_body">
-            <div class="body_header">
-              <div class="input">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
-                    stroke="#7D8798"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M17.5 17.5L13.875 13.875"
-                    stroke="#7D8798"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <input type="text" placeholder="Введите имя локации" />
-              </div>
-            </div>
-            <div class="items_container">
-              <div class="loc_item">Локация 1</div>
-              <div class="loc_item">Локация 2</div>
-              <div class="loc_item">Локация 3</div>
-              <div class="loc_item">Локация 4</div>
-              <div class="loc_item">Локация 5</div>
-            </div>
-          </div>
+        <div class="container_drop">
+         
         </div>
         <a href="#" class="link">Default</a>
         <a href="#" class="link"
@@ -281,8 +211,53 @@
         >
         <a href="#" class="link _bold">Default</a>
       </div>
-    </div>
+    </div> -->
 
+    <div class="drop_down">
+      <div class="result" id="results"></div>
+      <div class="drop_down_title">
+        <div class="text">Выберите локацию</div>
+        <div class="icon">
+          <img src="img/chevron-down.svg" alt="" />
+        </div>
+      </div>
+      <div class="drop_down_body">
+        <div class="body_header">
+          <div class="input">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                stroke="#7D8798"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.5 17.5L13.875 13.875"
+                stroke="#7D8798"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <input type="text" placeholder="Введите имя локации" />
+          </div>
+        </div>
+        <div class="items_container">
+          <div class="loc_item">Локация 1</div>
+          <div class="loc_item">Локация 2</div>
+          <div class="loc_item">Локация 3</div>
+          <div class="loc_item">Локация 4</div>
+          <div class="loc_item">Локация 5</div>
+        </div>
+      </div>
+    </div>
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="scripts/slick.min.js"></script>
 

@@ -353,6 +353,9 @@ main {
   .result {
     align-items: center;
     display: none;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
     .item {
       padding: 15px 40px 15px 16px;
       border-radius: 8px;
@@ -376,7 +379,7 @@ main {
   &._active {
     .drop_down_body,
     .drop_down_title {
-      display: none;
+      // display: none;
     }
     .result {
       display: flex;
@@ -639,6 +642,11 @@ h2 {
           .primary_button,
           .secondary_button {
             padding: 11px;
+            &._active {
+              border: 1px solid #3359e5;
+              background: #3359e5;
+              color: #fff;
+            }
           }
         }
         .input_cont {

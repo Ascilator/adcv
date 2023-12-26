@@ -336,6 +336,9 @@ main {
 .drop_down .result {
   align-items: center;
   display: none;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .drop_down .result .item {
   padding: 15px 40px 15px 16px;
@@ -353,10 +356,6 @@ main {
   right: 14px;
   transform: translate(0, -50%);
   cursor: pointer;
-}
-.drop_down._active .drop_down_body,
-.drop_down._active .drop_down_title {
-  display: none;
 }
 .drop_down._active .result {
   display: flex;
@@ -624,6 +623,12 @@ h2 {
 .big_block .filter_container .filter_block .filter_body .btn_cont .primary_button,
 .big_block .filter_container .filter_block .filter_body .btn_cont .secondary_button {
   padding: 11px;
+}
+.big_block .filter_container .filter_block .filter_body .btn_cont .primary_button._active,
+.big_block .filter_container .filter_block .filter_body .btn_cont .secondary_button._active {
+  border: 1px solid #3359e5;
+  background: #3359e5;
+  color: #fff;
 }
 .big_block .filter_container .filter_block .filter_body .input_cont p {
   padding: 10px 0;

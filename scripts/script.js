@@ -8,17 +8,52 @@ $(function () {
     $(this).removeClass('_active');
   });
 
+  $('.filter_body .secondary_button').click(function () {
+    $(this).toggleClass('_active');
+  });
+
   $('.loc_item').on('click', function () {
     $(this).parent().parent().parent().addClass('_active');
+
+    $('#results').html(
+      $('#results').html() +
+        `  <div class="item">
+              <span>${$(this).text()}</span>
+              <div class="icon _drop_close">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 5L5 15"
+                    stroke="#111828"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M5 5L15 15"
+                    stroke="#111828"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>`
+    );
+
+    $('._drop_close').on('click', function () {
+      $(this).parent().parent().siblings('.drop_down_body').removeClass('_active');
+      $(this).parent().remove();
+    });
   });
 
   $('.drop_down_title').on('click', function () {
     $(this).siblings('.drop_down_body').toggleClass('_active');
-  });
-
-  $('._drop_close').on('click', function () {
-    $(this).parent().parent().parent().removeClass('_active');
-    $(this).parent().parent().siblings('.drop_down_body').removeClass('_active');
   });
 });
 
