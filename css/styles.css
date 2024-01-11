@@ -126,6 +126,7 @@ main {
 }
 .secondary_button:hover {
   border: 1px solid #7d8798;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .secondary_button._disabled {
   border: 1px solid #dbe1ee;
