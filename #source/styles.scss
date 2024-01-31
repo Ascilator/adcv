@@ -109,6 +109,29 @@ main {
     background: rgba(51, 89, 229, 0.4);
   }
 }
+.header_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  margin-bottom: 60px;
+  transition: 0.3s;
+  .lang {
+    cursor: pointer;
+    &._active {
+      color: #3359e5;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
 
 .secondary_button {
   display: flex;
